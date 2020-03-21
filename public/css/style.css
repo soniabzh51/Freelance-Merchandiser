@@ -1,0 +1,323 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 1440px;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+}
+/* ---------------------------HEADER---------------------------- */
+header {
+    background-color: rgb(240, 240, 240);
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    color: #56445D;
+}
+.banner {
+    background-color: #8283a7;
+    height: 200px;
+    display: flex;
+}
+.logo {
+    width: 435px;
+    background-color: rgb(210, 94, 94);
+}
+.title {
+    width: 965px;
+    font-size: 30px;
+    text-align: center;
+}
+/* -------------------------MAIN CONTENT------------------------- */
+#mainContent{
+    display: flex;
+}
+            /*--------------------NAV------------------ */
+#mainMenu {
+   width: 450px;
+}
+.menu {
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    width: 400px;
+    height: 100px;
+    overflow: hidden;
+    display: block;
+    background-color: #C5E99B;
+    box-shadow: 1px 1px 2px rgb(152, 182, 117);
+    margin-bottom: 8px;
+    border-left: 30px solid #8FBC94;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+.menu li:last-child {
+    margin-bottom: 0px;
+}
+.menu li a {
+    text-align: left;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #56445D;
+    position: relative;
+}
+.menuContent {
+    position: absolute;
+    left: 30px;
+    width: 370px;
+    height: 30px;
+    top: 5px;
+}
+.menuTitle {
+    font-size: 20px;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+}
+.menuSubtitle {
+    color: #548687;
+    font-size: 14px;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+}
+.menu li:hover {
+    background-color: #3b8686;
+    border-color: #3b8686;
+}
+.menu li:hover .menuTitle {
+    color: #cbe86b;
+    font-size: 14px;
+}
+.menu li:hover .menuSubtitle {
+    color: #56445D;
+    font-size: 20px;
+}
+.active {
+    background-color: #3b8686;
+}
+.active .menuTitle {
+    color: #C5E99B;
+}
+                /*------------------END NAV----------------*/
+                /* -----------------MAIN------------------- */
+#main{
+    width: 70%;
+}
+#slide {
+    height: 300px;
+    background-color: indigo;
+}
+#content1 {
+    background-color: lightpink;
+    height: 200px;
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+#coaching {
+    background-color: orange;
+    width: 60%;
+    height: 100%;
+}
+#lastNews {
+    background-color: lightskyblue;
+    width: 40%;
+    height: 100%;
+}
+#content2 {
+    background-color: slategrey;
+    height: 200px;
+    display: flex;
+    padding-bottom: 10px;
+}
+#values {
+    background-color: saddlebrown;
+    width: 60%;
+    height: 100%;
+}
+#trust {
+    background-color: mediumseagreen;
+    width: 40%;
+    height: 100%;
+}
+#carousel {
+    background-color: yellow;
+    height: 80px;
+    padding: 20px 0 20px 0;
+}
+/* --------------------------FOOTER------------------------ */
+footer {
+    background-color: brown;
+}
+#blocContact {
+    background-color: burlywood;
+    padding: 10px 0 10px 0;
+    display: flex;
+}
+#joinMe {
+    background-color: rgb(86, 86, 237);
+    width: 40%;
+}
+#socialNetworks {
+    background-color: rgb(210, 94, 94);
+    width: 60%;
+}
+#navFooter {
+    background-color: blue;
+    height: 50px;
+}
+#navFooter ul{
+    text-align: center;
+}
+#navFooter ul li{
+    display: inline;
+    line-height: 50px;
+    margin-right: 20px;
+}
+#navFooter ul li a{
+    color: black;
+}
+#blocNavInfos {
+    display: flex;
+    background-color: crimson;
+    height: 150px;
+    padding: 5px 0 5px 0;
+}
+#infosSitemap {
+    background-color: indigo;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+}
+#navInfos{
+    width: 80%;
+}
+#infosSitemap p{
+    text-align: center;
+}
+#up {
+    background-color: darkgreen;
+    height: 100%;
+    width: 20%;
+}
+/*--------------MODAL LOGIN JS-----------*/
+
+/* 
+.logoCnx{
+    background-color: #8283a7;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.pictoLogin{
+    background-image: url("../logos/login-trans.png");
+    width: 40px;
+    height: 33px; 
+}
+.js-modal{
+   color: transparent; 
+} 
+*/
+
+/* Placement et dimensions de la boîte modale, centrage vert et horiz,
+ opacité du fonds */
+/* 
+/* En cas de débordement du texte, une barre latérale permet de scroller
+ (overflow :auto) Utile pour les périphériques de petite taille*/
+
+/* Dimensions de contenu (100vw=1 fois la largeur de la taille de 
+l'écran - (moins) 20px pour la marge sur les côtés. Id pour la hauteur (vh)*/
+/* 
+.modal-wrapper {
+    overflow: auto;
+    height: 400px ; 
+    width: 600px; 
+    max-width: calc(100vw - 20px);
+    max-width: calc(100vh - 20px);
+    padding: 20px;
+    background-color: rgb(151, 151, 151);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+}
+#login{
+    height: 328px;
+    margin: 0;
+}
+#login fieldset{
+    border-color: transparent;
+}
+#zone_idmdp fieldset{
+    height: 70px;
+}
+.modal-wrapper p {
+    text-align: center;
+    padding-top: 0;
+    
+}
+.modal-wrapper label {
+    color: rgb(58, 58, 58);
+}
+#identifiant {
+    margin-left: 30px;
+}
+#password {
+    margin-left: 13px;
+}
+.js-modal-close{
+    text-align: center;
+    background-color: rgb(70, 70, 70);
+    line-height: 30px;    
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 100px;
+    margin-top: 25px;
+
+}
+#connexion{
+    text-align: center;
+    background-color: rgb(70, 70, 70);
+    line-height: 30px;    
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 100px;
+    margin-top: 25px;
+
+}
+#valider{
+    background-color: rgb(70, 70, 70);
+    border: none;
+}
+#blocPassword a{
+    color: black;
+    font-size: 1.1rem;
+} 
+*/
+/*--------------END MODAL LOGIN JS-----------*/
