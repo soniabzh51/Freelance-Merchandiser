@@ -10,12 +10,14 @@ body {
     margin: 0 auto;
     font-size: 18px;
 }
+#page{
+    margin: 20px;
+}
 a {
     text-decoration: none;
 }
 /* ---------------------------HEADER---------------------------- */
 header {
-    background-color: rgb(240, 240, 240);
     padding: 20px 0 20px 0;
     display: flex;
     flex-direction: column;
@@ -51,6 +53,24 @@ h1 {
     line-height: 1.6;
     margin: 0 auto;
 }
+/* ------------------------STRATEGY----------------------------- */
+.svg svg line{
+    stroke: #000000;
+    stroke-width: 10px;
+}
+#strategy{
+    display: flex;
+    height:240px;
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+#strategy p{
+    font-size: 1.3em;
+    font-family: "Century Gothic", "Courier New";
+    margin: auto;
+}
+
 /* -------------------------MAIN CONTENT------------------------- */
 #mainContent{
     display: flex;
@@ -196,11 +216,11 @@ footer {
 }
 #joinMe {
     background-color: rgb(86, 86, 237);
-    width: 40%;
+    width: 30%;
 }
 #socialNetworks {
     background-color: rgb(210, 94, 94);
-    width: 60%;
+    width: 70%;
 }
 #navFooter {
     background-color: blue;
