@@ -3,48 +3,56 @@ html {
     margin: 0;
     padding: 0;
 }
+
 body {
     max-width: 1440px;
-    /* background-color: rgb(240, 240, 240); */
+    max-height: 1500px;
     width: 100%;
     margin: 0 auto;
     font-size: 18px;
 }
-#page{
+
+#page {
     margin: 20px;
 }
+
 a {
     text-decoration: none;
 }
+
 /* ---------------------------HEADER---------------------------- */
 header {
     padding: 20px 0 20px 0;
     display: flex;
     flex-direction: column;
 }
+
 h1 {
     color: #D59F33;
     font-size: 2em;
     font-weight: lighter;
-
 }
+
 .banner {
     height: 200px;
     display: flex;
 }
+
 .logo {
     width: 30%;
     display: flex;
     justify-content: center;
     padding-right: 20px;
 }
+
 .title {
     width: 70%;
     font-size: 30px;
     text-align: center;
     line-height: 0;
 }
-.title p{
+
+.title p {
     background-color: #063630;
     color: white;
     width: 36%;
@@ -54,51 +62,61 @@ h1 {
     line-height: 1.6;
     margin: 0 auto;
 }
+
 /* ------------------------STRATEGY----------------------------- */
-svg{
+svg {
     width: 1360px;
     height: 24px;
 }
-path{
+
+path {
     stroke: #000000;
     stroke-width: 4px;
 }
-#svg2{
+
+#svg2 {
     margin-bottom: 40px;
 }
-#strategy{
+
+#strategy {
     display: flex;
-    height:80px;
+    height: 80px;
     width: 100%;
     margin: 10px 0 10px 0;
 
 }
-#strategy p{
+
+#strategy p {
     font-size: 1.3em;
     font-family: "Century Gothic", "Courier New";
     margin: auto;
 }
 
 /* -------------------------MAIN CONTENT------------------------- */
-#main{
-    display: flex;
+#main {
+    /* display: flex; */
+   height: 900px;
 }
-            /*--------------------NAV------------------ */
+
+/*--------------------NAV------------------ */
 #mainMenu {
-   width: 450px;
-   font-family: "Century Gothic", "Courier New";
+    width: 30%;
+    font-family: "Century Gothic", "Courier New";
+    position: absolute
 }
+
 .menu {
     padding: 0;
-    margin: 0;
+    margin: auto;
 }
 .menu li {
-    width: 400px;
-    height: 100px;
+    width: 70%;
+    height: 75px;
+    line-height: 0.8;
     overflow: hidden;
     display: block;
     background-color: #B46D51;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -110,9 +128,11 @@ path{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+
 .menu li:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
+
 .menu li a {
     text-align: center;
     display: block;
@@ -121,24 +141,34 @@ path{
     color: #063630;
     position: relative;
 }
+#menuMerch, #menuTools{
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #063630;
+    position: relative;
+    cursor: -webkit-grab;
+}
 .menuContent {
+    width: 100%;
     position: absolute;
-    /* left: 30px; */
-    width: 370px;
-    height: 30px;
-    top: 5px;
 }
 .menuTitle {
-    font-size: 20px;
+    font-size: 1em;
+    margin-top: 10px;
     transition: all 300ms linear;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -ms-transition: all 300ms linear;
     -o-transition: all 300ms linear;
 }
+
 .menuSubtitle {
     color: white;
-    font-size: 14px;
+    font-weight: lighter;
+    margin-top: -5px;
+    font-size: 1em;
     line-height: 1;
     transition: all 300ms linear;
     -webkit-transition: all 300ms linear;
@@ -146,73 +176,120 @@ path{
     -ms-transition: all 300ms linear;
     -o-transition: all 300ms linear;
 }
+
 .menu li:hover {
     background-color: #E6D9CB;
 }
+
 .menu li:hover .menuTitle {
     color: #063630;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: lighter;
+    margin-top: 15px;
 }
+
 .menu li:hover .menuSubtitle {
     color: #B46D51;
-    font-size: 20px;
+    font-size: 0.9em;
 }
+
 .active {
     background-color: #E6D9CB;
 }
+
 .active .menuTitle {
-    color:#063630;
+    color: #063630;
 }
-.active .menuSubtitle{
+
+.active .menuSubtitle {
     color: #B46D51;
 }
-                /*------------------END NAV----------------*/
-                /* -----------------MAIN------------------- */
-#mainContent{
-    width: 70%;
+
+.menu2 {
+    width: 50%;
 }
+
+.menu2 li {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    display: none;
+}
+.menu2 li:last-child {
+    margin-bottom: 10px;
+}
+.menu2 li:hover {
+    background-color: #E6D9CB;
+}
+.subMenu3, .subMenu4{
+    text-align: center;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.menuTitle2{
+    margin: 12px auto;
+}
+
+/*------------------END NAV----------------*/
+/* -----------------MAIN------------------- */
+#mainContent {
+    height: 900px;
+    width: 70%;
+    position: relative;
+    float: right;
+}
+
 #slide {
-    height: 300px;
+    height: 45%;
     background-color: indigo;
 }
+
 #content1 {
     background-color: lightpink;
-    height: 200px;
+    height: 26%;
     display: flex;
     padding: 10px 0 10px 0;
 }
+
 #coaching {
     background-color: orange;
     width: 60%;
     height: 100%;
 }
+
 #lastNews {
     background-color: lightskyblue;
     width: 40%;
     height: 100%;
 }
+
 #content2 {
     background-color: slategrey;
-    height: 200px;
+    height: 26%;
     display: flex;
     padding-bottom: 10px;
 }
+
 #values {
     background-color: saddlebrown;
     width: 60%;
     height: 100%;
 }
+
 #trust {
     background-color: mediumseagreen;
     width: 40%;
     height: 100%;
 }
+
 #carousel {
     background-color: yellow;
-    height: 80px;
+    height: 50px;
+    margin-top: 20px;
     padding: 20px 0 20px 0;
 }
+
 /* --------------------------FOOTER------------------------ */
 footer {
     background-color: brown;
@@ -222,52 +299,64 @@ footer {
     padding: 10px 0 10px 0;
     display: flex;
 }
+
 #joinMe {
     background-color: rgb(86, 86, 237);
     width: 30%;
 }
+
 #socialNetworks {
     background-color: rgb(210, 94, 94);
     width: 70%;
 }
+
 #navFooter {
     background-color: blue;
     height: 50px;
 }
-#navFooter ul{
+
+#navFooter ul {
     text-align: center;
 }
-#navFooter ul li{
+
+#navFooter ul li {
     display: inline;
     line-height: 50px;
     margin-right: 20px;
 }
-#navFooter ul li a{
+
+#navFooter ul li a {
     color: black;
 }
+
 #blocNavInfos {
     display: flex;
     background-color: crimson;
     height: 150px;
     padding: 5px 0 5px 0;
 }
+
 #infosSitemap {
     background-color: indigo;
     height: 50px;
     font-size: 16px;
     line-height: 50px;
 }
-#navInfos{
+
+#navInfos {
     width: 80%;
 }
-#infosSitemap p{
+
+#infosSitemap p {
     text-align: center;
 }
+
 #up {
     background-color: darkgreen;
     height: 100%;
     width: 20%;
 }
+
 /*--------------MODAL LOGIN JS-----------*/
 
 /* 
