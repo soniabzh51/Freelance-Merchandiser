@@ -83,3 +83,47 @@ $("#merch").click(function(){
 $("#tools").click(function(){
     $(".subMenu4").toggle();
 });
+
+// **********************SLIDER JS 1*********************
+
+let slide = ["public/images/slide_1.jpg", "public/images/slide_2.jpg", "public/images/slide_3.jpg", "public/images/slide_4.png"];
+
+let i = 0; 
+setInterval(function(){
+    document.getElementById("slide2").src = slide[i];
+    i++;
+    if (i == 4) i = 0;
+}, 3000);
+
+function changeSlide(sens) {     
+    i = i + sens;
+    if (i < 0)         
+    i = slide.length - 1; 
+
+    if (i > slide.length - 1)        
+    i = 0; 
+
+document.getElementById("slide2").src = slide[i];
+}
+
+
+// let caption = ["Le merchandising : combiner esthétisme et commercialité !", "Une identité visuelle forte !","Susciter de l'émotion pour atirer le client...", "La vitrine : véritable carte de visite du magasin !"];
+// let x =0;
+
+// setIntervalCaption(function(){
+//     document.getElementById("p2") = caption[x];
+//     x++;
+//     if (x == 4) x = 0;
+// }, 5000);
+
+// function changeCaption(sens) {     
+//     x = x + sens;
+//     if (x < 0)         
+//     x = caption.length - 1; 
+
+//     if (x > caption.length - 1)        
+//     x = 0; 
+
+// document.getElementById("p2") = caption[x];
+// }
+
