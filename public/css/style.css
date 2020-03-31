@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 
-/* ---------------------------HEADER---------------------------- */
+/******************************HEADER*****************************/
 header {
     height: 26%;
     padding: 20px 0 20px 0;
@@ -62,7 +62,7 @@ h1 {
     margin: auto;
 }
 
-/* ------------------------STRATEGY----------------------------- */
+/********************************INTRO******************************/
 #intro{
     margin-top: -7%;
 }
@@ -90,19 +90,20 @@ path {
     margin: 0 auto ;
 }
 
-/* -------------------------MAIN CONTENT------------------------- */
+/****************************MAIN**************************/
 #main {
-    /* display: flex; */
-   height: 900px;
-}
-
+    height: 900px;
+ }
+ 
 /*--------------------NAV------------------ */
 #mainMenu {
     width: 30%;
     font-family: "Century Gothic", "Courier New";
     position: absolute
 }
-
+#mainMenu #menuMobile, #mainMenu .menuMobile{
+    display: none;
+}
 .menu {
     padding: 0;
     margin: auto;
@@ -146,7 +147,7 @@ path {
     height: 100%;
     color: #063630;
     position: relative;
-    cursor: -webkit-grab;
+    cursor: pointer;
 }
 .menuContent {
     width: 100%;
@@ -228,67 +229,104 @@ path {
 .menuTitle2{
     margin: 12px auto;
 }
-
 /*------------------END NAV----------------*/
-/* -----------------MAIN------------------- */
+
+/* -----------------MAIN CONTENT----------------- */
 #mainContent {
     height: 900px;
     width: 70%;
     position: relative;
     float: right;
 }
-
+/* ---slider--- */
 #slide {
     height: 45%;
-    background-color: indigo;
+    display: flex;
+    background-color: #E6D9CB;
+    padding: 20px 0 20px 0;
 }
-
+/* .sliderJs{
+    display: none;
+} */
+#slider{
+    margin: auto;
+}
+#slide2 {
+    width: 600px;
+    height: 405px;
+}
+#preview, #next{
+    cursor: pointer;
+    position: absolute; 
+    top: 175px;
+    font-size: 50px;
+    color: #E6D9CB;
+    background-color: #B46D51;
+    padding: 10px;
+}
+#preview{
+    left: 0;
+    margin-left: 5%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#next{
+    right: 0;
+    margin-right: 5%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* ---end slider--- */
 #content1 {
     background-color: lightpink;
     height: 26%;
     display: flex;
     padding: 10px 0 10px 0;
 }
-
 #coaching {
     background-color: orange;
     width: 60%;
     height: 100%;
 }
-
 #lastNews {
     background-color: lightskyblue;
     width: 40%;
     height: 100%;
 }
-
 #content2 {
     background-color: slategrey;
     height: 26%;
     display: flex;
     padding-bottom: 10px;
 }
-
 #values {
     background-color: saddlebrown;
     width: 60%;
     height: 100%;
 }
-
 #trust {
     background-color: mediumseagreen;
     width: 40%;
     height: 100%;
 }
+/* ******************************END MAIN*************************/
 
+/* *******************************CAROUSEL************************/
 #carousel {
     background-color: yellow;
     height: 50px;
     margin-top: 20px;
     padding: 20px 0 20px 0;
 }
+/* *****************************END CAROUSEL**********************/
 
-/* --------------------------FOOTER------------------------ */
+/* ********************************FOOTER*************************/
 footer {
     background-color: brown;
 }
@@ -297,64 +335,52 @@ footer {
     padding: 10px 0 10px 0;
     display: flex;
 }
-
 #joinMe {
     background-color: rgb(86, 86, 237);
     width: 30%;
 }
-
 #socialNetworks {
     background-color: rgb(210, 94, 94);
     width: 70%;
 }
-
 #navFooter {
     background-color: blue;
     height: 50px;
 }
-
 #navFooter ul {
     text-align: center;
 }
-
 #navFooter ul li {
     display: inline;
     line-height: 50px;
     margin-right: 20px;
 }
-
 #navFooter ul li a {
     color: black;
 }
-
 #blocNavInfos {
     display: flex;
     background-color: crimson;
     height: 150px;
     padding: 5px 0 5px 0;
 }
-
 #infosSitemap {
     background-color: indigo;
     height: 50px;
     font-size: 16px;
     line-height: 50px;
 }
-
 #navInfos {
     width: 80%;
 }
-
 #infosSitemap p {
     text-align: center;
 }
-
 #up {
     background-color: darkgreen;
     height: 100%;
     width: 20%;
 }
-
 /*--------------MODAL LOGIN JS-----------*/
 
 /* 

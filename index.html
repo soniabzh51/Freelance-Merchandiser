@@ -11,8 +11,6 @@
     <meta name="description"
         content="Ce que je peux vous apporter : techniques de présentation, élaboration et réalisation de vitrine, mise en place signalétique, analyse du comportement client, accompagnement des magasins en affiliation et franchisés, recrutement, formation, accompagnement des équipes, préparation et animation de reunions. Une expertise merchandising qui saura booster votre entreprise !">
 
-
-
     <!------------------------ css --------------------------->
     <link rel="stylesheet" href="public/css/style.css">
     <!----------------------- fonts -------------------------->
@@ -91,7 +89,7 @@
             </div>
             <div id="strategy">
                 <p>Définissons ensemble votre <strong>meilleure stratégie</strong> merchandising <br> et offrez à vos
-                    clients leur plus  <strong>belle expérience</strong> shopping</p>
+                    clients leur plus <strong>belle expérience</strong> shopping</p>
             </div>
             <!-- left arrow -->
             <div id="svg2">
@@ -105,6 +103,10 @@
         <main id="main">
             <!-- menu -->
             <nav id="mainMenu">
+                <input type="checkbox" id="menuMobile" role="button">
+                <label for="menuMobile" class="menuMobile">
+                    <img src="public/logos/menu.png" alt="Menu mobile IP style">
+                </label>
                 <ul class="menu">
                     <li>
                         <a href="#" class="active">
@@ -189,14 +191,14 @@
                 </ul>
             </nav>
             <section id="mainContent">
-                <!-- Slider JS-->
-                <section id="slide" class="sliderJs">SLIDER
-                    <!-- <div id="slider1">
-                <img src="public/images/ambiance_pub.jpg" alt="Ambiance pub" id="slide2">
-                <div id="precedent" onclick="ChangeSlide(1)">
-                    <</div> <div id="suivant" onclick="ChangeSlide(1)">>
-                </div>
-            </div> -->
+                <!-- Slider JS 1-->
+                <section id="slide" class="sliderJs">
+                    <div id="slider">
+                            <img src="public/images/slide_1.jpg" alt="Espace femme - GEMO" id="slide2">
+                        <div id="preview" onclick="changeSlide(1)">
+                            <</div> <div id="next" onclick="changeSlide(1)">>
+                        </div>
+                    </div>
                 </section>
                 <!-- End slider JS -->
 
