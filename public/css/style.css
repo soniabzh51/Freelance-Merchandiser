@@ -5,24 +5,21 @@ html {
 }
 
 body {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
     font-size: 18px;
 }
-
 #page {
-    height: 1500px;
-    margin: 20px;
+    max-width: 1400px;
+    width: 100%;
+    height: 3500px;
+    margin: auto;
 }
-
 a {
     text-decoration: none;
 }
 
 /******************************HEADER*****************************/
 header {
-    height: 26%;
+    height: 400px;
     padding: 20px 0 20px 0;
     display: flex;
     flex-direction: column;
@@ -62,8 +59,9 @@ h1 {
     margin: auto;
 }
 
-/********************************INTRO******************************/
+/**------------INTRO------------*/
 #intro{
+    height: 150px;
     margin-top: -7%;
 }
 svg {
@@ -92,14 +90,17 @@ path {
 
 /****************************MAIN**************************/
 #main {
-    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 42%;
  }
  
 /*--------------------NAV------------------ */
 #mainMenu {
-    width: 30%;
+    width: 20%;
+    height: 100%;
     font-family: "Century Gothic", "Courier New";
-    position: absolute
 }
 #mainMenu #menuMobile, #mainMenu .menuMobile{
     display: none;
@@ -109,8 +110,7 @@ path {
     margin: auto;
 }
 .menu li {
-    width: 70%;
-    height: 75px;
+    height: 100px;
     line-height: 0.8;
     overflow: hidden;
     display: block;
@@ -154,7 +154,8 @@ path {
     position: absolute;
 }
 .menuTitle {
-    font-size: 1em;
+    color: #063630;
+    font-size: 1.1em;
     margin-top: 10px;
     transition: all 300ms linear;
     -webkit-transition: all 300ms linear;
@@ -167,7 +168,7 @@ path {
     color: white;
     font-weight: lighter;
     margin-top: -5px;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 1;
     transition: all 300ms linear;
     -webkit-transition: all 300ms linear;
@@ -189,7 +190,8 @@ path {
 
 .menu li:hover .menuSubtitle {
     color: #B46D51;
-    font-size: 0.9em;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 .active {
@@ -233,106 +235,127 @@ path {
 
 /* -----------------MAIN CONTENT----------------- */
 #mainContent {
-    height: 900px;
-    width: 70%;
+    width: 75%;
+    height: 100%;
     position: relative;
-    float: right;
+    margin: auto;
 }
 /* ---slider--- */
 #slide {
-    height: 45%;
+    height: 40%;
+    width: 95%;
+    margin: auto;
     display: flex;
     background-color: #E6D9CB;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 10px 0;
 }
 /* .sliderJs{
     display: none;
 } */
 #slider{
+    display: inline-block;
     margin: auto;
+    width: 70%;
 }
 #slide2 {
     width: 600px;
     height: 405px;
+    position: static;
 }
 #preview, #next{
+    position: relative;
+    top: 150px;
     cursor: pointer;
-    position: absolute; 
-    top: 175px;
     font-size: 50px;
     color: #E6D9CB;
-    background-color: #B46D51;
+    background-color: #000000;
+    opacity: 0.5;
     padding: 10px;
-}
-#preview{
-    left: 0;
-    margin-left: 5%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+#preview:hover, #next:hover{
+    opacity: 1;
+} 
+#preview{
+    float: left;
+    right: 10%;
 }
 #next{
-    right: 0;
-    margin-right: 5%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    float: right;
+    left: 10%;
 }
 /* ---end slider--- */
 #content1 {
-    background-color: lightpink;
-    height: 26%;
+    background-color: #B46D51;
+    color:black;
     display: flex;
+    flex-direction: column;
+    margin: 20px 28px 0 28px;
     padding: 10px 0 10px 0;
 }
 #coaching {
-    background-color: orange;
-    width: 60%;
     height: 100%;
+    display: flex;
+    padding-left: 20px;
 }
-#lastNews {
-    background-color: lightskyblue;
-    width: 40%;
-    height: 100%;
+#coaching div{
+    width: 33%;
+    border-left: 1px solid black;
+    padding-left: 20px;
+}
+#coaching :first-child{
+    border: none;
+    padding-left: 0;
+}
+#coaching p{
+    margin-right: 20px;
+    text-align: justify;
+}
+#cv{
+    text-align: center;
+    margin: 20px 0 10px 0;
 }
 #content2 {
-    background-color: slategrey;
-    height: 26%;
-    display: flex;
-    padding-bottom: 10px;
+    background-color: #063630;
+    color: white;
+    text-align: justify;
+    margin: 20px 28px 0 28px;
+    padding: 10px 20px 10px 20px;
 }
 #values {
     background-color: saddlebrown;
-    width: 60%;
     height: 100%;
 }
-#trust {
-    background-color: mediumseagreen;
-    width: 40%;
-    height: 100%;
-}
+#content1 h2, #content2 h2{
+    font-size: 1.1em;
+    font-weight: lighter;
+    font-family: "Century Gothic", "Courier New";
+    text-align: center;
+} 
 /* ******************************END MAIN*************************/
 
 /* *******************************CAROUSEL************************/
 #carousel {
     background-color: yellow;
-    height: 50px;
-    margin-top: 20px;
-    padding: 20px 0 20px 0;
+    height: 4%;
+    margin-top: 15px;
+   
 }
 /* *****************************END CAROUSEL**********************/
 
 /* ********************************FOOTER*************************/
 footer {
     background-color: brown;
+    height: 6%;
 }
 #blocContact {
+    font-size: 16px;
+
     background-color: burlywood;
-    padding: 10px 0 10px 0;
     display: flex;
 }
 #joinMe {
@@ -345,14 +368,14 @@ footer {
 }
 #navFooter {
     background-color: blue;
-    height: 50px;
+    /* height: 50px; */
 }
 #navFooter ul {
     text-align: center;
 }
 #navFooter ul li {
     display: inline;
-    line-height: 50px;
+    /* line-height: 50px; */
     margin-right: 20px;
 }
 #navFooter ul li a {
@@ -361,14 +384,14 @@ footer {
 #blocNavInfos {
     display: flex;
     background-color: crimson;
-    height: 150px;
+    /* height: 150px; */
     padding: 5px 0 5px 0;
 }
 #infosSitemap {
     background-color: indigo;
-    height: 50px;
+    /* height: 50px; */
     font-size: 16px;
-    line-height: 50px;
+    /* line-height: 50px; */
 }
 #navInfos {
     width: 80%;
