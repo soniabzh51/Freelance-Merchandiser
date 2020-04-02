@@ -32,49 +32,6 @@
                     <p>Freelance Merchandiser</p>
                 </div>
             </section>
-
-            <!--JS Modal - Connect -->
-
-            <!-- <div class="pictoLogin">  
-                    <a href="#modal1" class="js-modal"> 
-                        cnx
-                    </a> -->
-            <!-- Class "js-modal" à mettre sur tous les liens du site qui sont 
-                censés ouvrir une boîte modale, puis faire un querySelector dans le js-->
-            <!-- </div>
-                <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria_labelledby="Login"
-                    style="display: none;"> -->
-            <!-- Display : none permet de cacher le contenu de la boite à l'utilisateur,
-                    Il sera annulé dans le js -->
-            <!-- <div class="modal-wrapper js-modal-stop">
-                        <div id="zone_idmdp" class="formulaire">
-                            <form class="LoginForm" id="login" method="POST" action="traitement php">
-                                <div id="blocPassword">
-                                    <h3>On s'est déjà vu ?</h3>
-                                    <p>Connectez-vous pour accéder à votre compte et<br>
-                                        profiter de tous ses avantages</p>
-                                    <fieldset>
-                                        <label for="identifiant">Identifiant</label>
-                                        <input type="text" name="identifiant" id="identifiant"
-                                            placeholder="Identifiant"><br>
-                                        <span id="missId"></span>
-                                        <label for="password">Mot de passe</label>
-                                        <input type="text" name="password" id="password" required
-                                            placeholder="Mot de passe"><br>
-                                        <span id="missPassword"></span>
-                                    </fieldset>
-                                    <div id="connexion">
-                                        <a href="index.html"><button id="valider">Connexion</button></a>
-                                    </div>
-                                    <a href="#" id="lost">Mot de passe oublié ?</a><br>
-                                    <a href="#modal2" id="new">Pas encore de compte ?</a><br>
-                                    <button class="js-modal-close">Quitter</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </aside>-->
-            <!--End JS Modal-->
         </header>
 
         <!--  CONTENT -->
@@ -208,10 +165,11 @@
                         <div>
                             <p>
                                 De nature <strong>curieuse</strong>, j’aime la liberté d’entreprendre et la multitude
-                                des <strong>échanges</strong> que je trouve très enrichissante. 
+                                des <strong>échanges</strong> que je trouve très enrichissante.
                             </p>
                             <p>
-                                Quoi de plus motivant que de s’offrir une <strong>nouvelle vision</strong> de son métier à travers diverses
+                                Quoi de plus motivant que de s’offrir une <strong>nouvelle vision</strong> de son métier
+                                à travers diverses
                                 approches.
                             </p>
                             <p>
@@ -237,58 +195,142 @@
                         <div>
                             <p>
                                 Vous avez un service merchandising et marketing ? <br>
-                                Je serai ravie de collaborer avec vos équipes ! 
+                                Je serai ravie de collaborer avec vos équipes !
                             </p>
                             <p>
                                 La <strong>formation</strong> est aussi un formidable outil de <strong>développement
-                                professionnel</strong> pour vos équipes. Formatrice en merchandising, je serais
+                                    professionnel</strong> pour vos équipes. Formatrice en merchandising, je serais
                                 heureuse de <strong>partager mes connaissances</strong> et donner du sens au mot
                                 <strong>commercialité</strong> auprès de vos équipes.
                             </p>
                         </div>
                     </article>
-                    <div id="cv">
-                        Et si la curiosité vous pousse un peu plus, jetez un œuil à <strong>mon CV</strong>.
-                    </div>
+                       <!-- Modal -->
+
+                    <div id="lien_cvJs">
+                        <div id="cv">
+                            Et si la curiosité vous pousse un peu plus, jetez un œuil à
+                            <a href="#modal1" class="js-modal">mon CV,</a> ou téléchargez-le en 
+                            <a href="public/images/cvIsabelle_Phelippot.pdf">version pdf.</a>
+                        </div>
+                        <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria_labelledby="Login" style="display: none;">
+                            <div class="modal-wrapper js-modal-stop">
+                                <button class="js-modal-close">Fermer</button>
+                            </div>
+                        </aside>
                 </section>
+
+                <!--JS Modal - Connect -->
+
+                <!-- <div class="pictoLogin">  
+                    <a href="#modal1" class="js-modal"> 
+                        cnx
+                    </a> -->
+                <!-- Class "js-modal" à mettre sur tous les liens du site qui sont 
+                censés ouvrir une boîte modale, puis faire un querySelector dans le js-->
+                <!-- </div>
+                <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria_labelledby="Login"
+                    style="display: none;"> -->
+                <!-- Display : none permet de cacher le contenu de la boite à l'utilisateur,
+                    Il sera annulé dans le js -->
+                <!-- <div class="modal-wrapper js-modal-stop">
+                        <div id="zone_idmdp" class="formulaire">
+                            <form class="LoginForm" id="login" method="POST" action="traitement php">
+                                <div id="blocPassword">
+                                    <h3>On s'est déjà vu ?</h3>
+                                    <p>Connectez-vous pour accéder à votre compte et<br>
+                                        profiter de tous ses avantages</p>
+                                    <fieldset>
+                                        <label for="identifiant">Identifiant</label>
+                                        <input type="text" name="identifiant" id="identifiant"
+                                            placeholder="Identifiant"><br>
+                                        <span id="missId"></span>
+                                        <label for="password">Mot de passe</label>
+                                        <input type="text" name="password" id="password" required
+                                            placeholder="Mot de passe"><br>
+                                        <span id="missPassword"></span>
+                                    </fieldset>
+                                    <div id="connexion">
+                                        <a href="index.html"><button id="valider">Connexion</button></a>
+                                    </div>
+                                    <a href="#" id="lost">Mot de passe oublié ?</a><br>
+                                    <a href="#modal2" id="new">Pas encore de compte ?</a><br>
+                                    <button class="js-modal-close">Quitter</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </aside>-->
+                <!--End JS Modal-->
+
                 <section id="content2">
                     <h2>Ils m'on fait confiance...</h2>
                     <article id="trust">
-                        <p>« Isabelle est une personne très professionnelle, efficace, stratégique et constructive. j'ai
-                            eu le plaisir de pouvoir collaborer avec elle sur plusieurs projets et grâce à ses
-                            compétences, ils furent tous menés à bien. »
-                            <strong>Yousra Guille, chef de secteur chez Marionnaud</strong>.
-                        </p>
-                        <p>
-                            « Isabelle a cet instinct qui lui permet d'imaginer le meilleur parcours client pour
-                            n'importe quelle enseigne. Sa créativité et sa bonne humeur contagieuse en fait un excellent
-                            élément au sein d'une équipe pour booster les ventes et la relation client. Une pépite ! »
-                            <strong>Elise Ménager Durand, chargée de Communication Transition énergétique et
-                                Alimentaire-Nantes Métropole</strong>.
-                        </p>
-                        <p>
-                            Isabelle a toujours fourni un travail de qualité en merchandising, que ce soit dans
-                            l'élaboration des préconisations / notes merchandising ou dans la réalisation sur le
-                            terrain. Elle fait preuve de pédagogie pour que les équipes assimilent au mieux les
-                            informations transmises. Sa connaissance du terrain et la considération qu'elle a pour les
-                            équipes sont des atouts précieux dans la réalisation de sa mission. Son esprit d’équipe et
-                            sa bonne humeur font le reste. Je la recommande vivement si vous avez besoin d'une personne
-                            opérationnelle et créative , idéale pour donner de l’énergie et des idées ! 
-                            <strong>Céline Verand, directrice commerciale</strong>.
-                        </p>
+                        <div>
+                            <p>«Isabelle est une personne très professionnelle, efficace, stratégique et constructive.
+                            </p>
+                            <p>
+                                J'ai eu le plaisir de pouvoir collaborer avec elle sur plusieurs projets et grâce à ses
+                                compétences, ils furent tous menés à bien.»
+                            </p>
+                            <p>
+                                <strong>Yousra Guille,</strong>
+                            </p>
+                            <p>
+                                <strong>Chef de secteur chez Marionnaud</strong>.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                «Isabelle a cet instinct qui lui permet d'imaginer le meilleur parcours client pour
+                                n'importe quelle enseigne.
+                            </p>
+                            <p> Sa créativité et sa bonne humeur contagieuse en fait un excellent
+                                élément au sein d'une équipe pour booster les ventes et la relation client. <br> Une
+                                pépite
+                                !»
+                            </p>
+                            <p>
+                                <strong>Elise Ménager Durand,</strong>
+                            </p>
+                            <p>
+                                <strong>Chargée de Communication Transition énergétique et
+                                    Alimentaire Nantes Métropole</strong>.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                «Isabelle a toujours fourni un travail de qualité en merchandising, que ce soit dans
+                                l'élaboration des préconisations notes merchandising ou dans la réalisation sur le
+                                terrain.
+                            </p>
+                            <p>
+                                Elle fait preuve de pédagogie pour que les équipes assimilent au mieux les
+                                informations transmises. Sa connaissance du terrain et la considération qu'elle a pour
+                                les équipes sont des atouts précieux dans la réalisation de sa mission.
+                            </p>
+                            <p>
+                                Son esprit d’équipe et sa bonne humeur font le reste. Je la recommande vivement si vous
+                                avez besoin
+                                d'une
+                                personne opérationnelle et créative, idéale pour donner de l’énergie et des idées !»
+                            </p>
+                            <p>
+                                <strong>Céline Verand,<br>Directrice commerciale</strong>.
+                            </p> 
+                        </div>
                     </article>
                 </section>
             </section>
         </main>
-        <section id="carousel"><img src="" alt="">
-            CAROUSEL LOGOS DES MARQUES
-            logos des marques
-        </section>
-
 
         <!-- FOOTER -->
-
         <footer>
+            <section id="carousel"><img src="" alt="">
+                CAROUSEL LOGOS DES MARQUES
+                logos des marques
+                <p>CAROUSEL LOGOS DES MARQUES</p>
+            </section>
             <section id="blocContact">
                 <div id="joinMe">
                     <p>Adresse</p>
