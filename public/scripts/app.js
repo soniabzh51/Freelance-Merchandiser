@@ -1,53 +1,53 @@
 //  ************************* BOITE MODALE JS**********************
 
-// let modal = null
+let modal = null
 //    Variable  qui permet de savoir quelle boîte modale est actuellement ouverte,
 //    et qui va  servir a savoir laquelle fermer !
 
 //    Création d'une fonction qui prend en compte l'évènement (e)
-// const OPENMODAL = function (e) {
-//     e.preventDefault()
+const OPENMODAL = function (e) {
+    e.preventDefault()
 
-//     const TARGET = document.querySelector(e.target.getAttribute('href'))
-//     TARGET.style.display = null
-//     TARGET.removeAttribute('aria-hidden')
-//     TARGET.setAttribute('aria-modal', 'true')
-//     modal = TARGET
-//     modal.addEventListener('click', CLOSEMODAL)
-//     modal.querySelector('.js-modal-close').addEventListener('click', CLOSEMODAL)
-//     modal.querySelector('.js-modal-stop').addEventListener('click', STOPPROPAGATION)
-// }
+    const TARGET = document.querySelector(e.target.getAttribute('href'))
+    TARGET.style.display = null
+    TARGET.removeAttribute('aria-hidden')
+    TARGET.setAttribute('aria-modal', 'true')
+    modal = TARGET
+    modal.addEventListener('click', CLOSEMODAL)
+    modal.querySelector('.js-modal-close').addEventListener('click', CLOSEMODAL)
+    modal.querySelector('.js-modal-stop').addEventListener('click', STOPPROPAGATION)
+}
 //    ligne 15 : recherche de l'élément qui ferme la boîte (bouton) et au clic,
 //    ferme la boîte
 
-// const CLOSEMODAL = function (e) {
-//     if (modal === null) return
-//     e.preventDefault()
-//     modal.style.display = "none"
-//     modal.setAttribute('aria-hidden', 'true')
-//     modal.removeAttribute('aria-modal')
-//     modal.removeEventListener('click', CLOSEMODAL)
-//     modal.querySelector('.js-modal-close').removeEventListener('click', CLOSEMODAL)
-//     modal.querySelector('.js-modal-stop').removeEventListener('click', STOPPROPAGATION)
-//     modal = null
-// }
+const CLOSEMODAL = function (e) {
+    if (modal === null) return
+    e.preventDefault()
+    modal.style.display = "none"
+    modal.setAttribute('aria-hidden', 'true')
+    modal.removeAttribute('aria-modal')
+    modal.removeEventListener('click', CLOSEMODAL)
+    modal.querySelector('.js-modal-close').removeEventListener('click', CLOSEMODAL)
+    modal.querySelector('.js-modal-stop').removeEventListener('click', STOPPROPAGATION)
+    modal = null
+}
 
-// const STOPPROPAGATION = function (e) {
-//     e.stopPropagation()
-// }
+const STOPPROPAGATION = function (e) {
+    e.stopPropagation()
+}
 //    cette fonction permet de stopper l'évènnement du 
 //   "clic n'importe ou qui ferme la boîte"
 
 
-// document.querySelectorAll('.js-modal').forEach(a => {
-//     a.addEventListener('click', OPENMODAL)  
-// })
+document.querySelectorAll('.js-modal').forEach(a => {
+    a.addEventListener('click', OPENMODAL)  
+})
 
-// window.addEventListener('keydown', function (e) {
-//     if (e.key === "Escape" || e.key === "Esc" || e.key === "esc") {
-//         CLOSEMODAL(e)
-//     }
-// })
+window.addEventListener('keydown', function (e) {
+    if (e.key === "Escape" || e.key === "Esc" || e.key === "esc") {
+        CLOSEMODAL(e)
+    }
+})
 //     (ligne 26) selectionne tous les liens avc la class js-modal,
 //    (ligne 27) pour chaque lien, ajoute un eventListener, 
 //    (ligne 27) et au Clic, appelle la fonction openModal.
