@@ -76,12 +76,13 @@ window.addEventListener('keydown', function (e) {
 // });
 
 // ***********************MENU************************
-
-$("#merch").click(function(){
-    $(".subMenu3").toggle();
-});
-$("#tools").click(function(){
-    $(".subMenu4").toggle();
+$(document).ready(function(){
+    $("#merch").click(function(){
+        $(".subMenu3").toggle();
+    });
+    $("#tools").click(function(){
+        $(".subMenu4").toggle();
+    });
 });
 
 // **********************SLIDER JS 1*********************
@@ -127,3 +128,10 @@ document.getElementById("slide2").src = slide[i];
 // document.getElementById("p2") = caption[x];
 // }
 
+// *************ANIMATION CONTENT2***************
+
+$(document).ready(function(){
+    $(".more").click(function(){
+      $(".ref").slideToggle("slow");
+    });
+  });
