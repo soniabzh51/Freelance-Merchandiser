@@ -29,13 +29,27 @@ h1 {
 }
 .banner {
     display: flex;
+    animation-name: slideBanner;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+@keyframes slideBanner{
+    from{
+        margin-left: 100%;
+        width: 200%;
+    }
+    to{
+        margin-left: 0%;
+        width :100%
+    }
 }
 .logo {
     width: 25%;
     height: 70%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 .title {
     margin-top: 2%;
@@ -302,36 +316,54 @@ path {
 #content2 {
     background-color: #063630;
     color: white;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
     text-align: justify;
     margin: 20px 28px 0 28px;
     padding: 10px 0 10px 0;
 }
-#trust{
-    height: 100%;
+#articles{
     display: flex;
+    margin-top: 3%;
+}
+.trust{
+    height: 100%;
+    width: 33%;
+    /* display: flex;
+    flex-direction: column; */
     padding-left: 20px;    
 }
-#trust div{
-    width: 33%;
-    border-left: 1px solid white;
-    padding-left: 20px; 
-}
-#trust :first-child{
+.trust :first-child{
     border: none;
     padding-left: 0;    
 }
-#trust p{
+.trust p{
     margin-right: 20px;
     text-align: justify;
-   
+}
+.more{
+    padding: 5px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3; 
+}
+.ref{
+    padding: 10px;
+    display: none;  
 }
 #content1 h2, #content2 h2{
-    font-size: 1.1em;
+    width: 45%;
+    margin: auto;
+    font-size: 1.2em;
     font-weight: lighter;
     font-family: "Century Gothic", "Courier New";
     text-align: center;
+}
+#content1 h2{
+    height: 40px;
+    line-height: 2;
+    margin-bottom: 10px;
 }
 #cv :last-child{
     text-decoration: underline;
