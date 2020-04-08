@@ -4,7 +4,6 @@ html {
     padding: 0;
     height: auto;
 }
-
 body {
     font-size: 16px;
 }
@@ -101,13 +100,14 @@ path {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 66%;
+    height: 80%;
+    margin-bottom: 20px;
  }
  
 /*--------------------NAV------------------ */
 #mainMenu {
     width: 23%;
-    height: 100%;
+    height: 75%;
     font-family: "Century Gothic", "Courier New";
 }
 #mainMenu #menuMobile, #mainMenu .menuMobile{
@@ -135,11 +135,9 @@ path {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-
 .menu li:last-child {
     margin-bottom: 10px;
 }
-
 .menu li a {
     text-align: center;
     display: block;
@@ -171,7 +169,6 @@ path {
     -ms-transition: all 300ms linear;
     -o-transition: all 300ms linear;
 }
-
 .menuSubtitle {
     color: white;
     font-weight: lighter;
@@ -184,32 +181,26 @@ path {
     -ms-transition: all 300ms linear;
     -o-transition: all 300ms linear;
 }
-
 .menu li:hover {
     background-color: #E6D9CB;
 }
-
 .menu li:hover .menuTitle {
     color: #063630;
     font-size: 0.9em;
     font-weight: lighter;
     margin-top: 15px;
 }
-
 .menu li:hover .menuSubtitle {
     color: #B46D51;
     font-size: 1.1em;
     font-weight: bold;
 }
-
 .active {
     background-color: #E6D9CB;
 }
-
 .active .menuTitle {
     color: #063630;
 }
-
 .active .menuSubtitle {
     color: #B46D51;
 }
@@ -246,9 +237,6 @@ path {
     background-color: #E6D9CB;
     margin: auto;
 }
-/* .sliderJs{
-    display: none;
-} */
 #slider{
     display: inline-block;
     margin: auto;
@@ -283,12 +271,14 @@ path {
     left: 5%;
 }
 /* ---end slider--- */
+
+/* ---content1--- */
 #content1 {
     background-color: #B46D51;
     color:black;
     display: flex;
     flex-direction: column;
-    margin: 20px 28px 0 28px;
+    margin: 30px 28px 0 28px;
     padding: 10px 0 10px 0;
 }
 #coaching {
@@ -297,7 +287,7 @@ path {
     padding-left: 20px;
 }
 #coaching div{
-    width: 33%;
+    width: 50%;
     border-left: 1px solid black;
     padding-left: 20px;
 }
@@ -307,38 +297,36 @@ path {
 }
 #coaching p{
     margin-right: 20px;
-    text-align: justify;
+    text-align: center;
 }
 #cv{
     text-align: center;
     margin: 20px 0 10px 0;
 }
+/* ---content2--- */
 #content2 {
     background-color: #063630;
     color: white;
-    /* display: flex; */
     text-align: justify;
-    margin: 20px 28px 0 28px;
+    margin: 30px 28px 0 28px;
     padding: 10px 0 10px 0;
 }
 #articles{
     display: flex;
     margin-top: 3%;
+    width: 98%;
 }
 .trust{
     height: 100%;
     width: 33%;
-    /* display: flex;
-    flex-direction: column; */
-    padding-left: 20px;    
+    padding-left: 20px;
 }
 .trust :first-child{
     border: none;
     padding-left: 0;    
 }
 .trust p{
-    margin-right: 20px;
-    text-align: justify;
+    text-align: left;
 }
 .more{
     padding: 5px;
@@ -356,7 +344,7 @@ path {
     width: 45%;
     margin: auto;
     font-size: 1.2em;
-    font-weight: lighter;
+    font-weight: bold;
     font-family: "Century Gothic", "Courier New";
     text-align: center;
 }
@@ -391,7 +379,6 @@ path {
     max-width: calc(100vh - 20px);
     background-image: url("../images/cvIsabellePhelippot.png");
     background-repeat: no-repeat;
-    
 }
 .js-modal{
     width: 5%;
@@ -402,80 +389,129 @@ path {
 .js-modal-close{
     position: absolute;
     top: 20%;
-    right: 22%;
+    right: 12%;
     height: 50px;
     width: 150px;
+    border: 1px solid rgb(255, 174, 174);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     font-size: 1.3em;
-    background-color: #f9c3cb;
+    background-color: rgb(255, 174, 174);
     cursor: pointer;
 }
 /* ------------End modal----------- */
+
 /* ******************************END MAIN*************************/
 
 
 /* ********************************FOOTER*************************/
 footer {
-    background-color: brown;
-    height: 17%;
+    height: 30%;
+    width: 100%;
 }
-#carrousel {
-    background-color: yellow;
-    margin-top: 15px;
+#carousel{
+    text-align: center;
+    font-size: 2em;
+}
+#footerContent{
+    display: flex;
+}
+#footerImage{
+    width: 23%;
+    margin: 0;
+}
+#footerImage img{
+    width: 100%;
+    margin: 0;
 }
 #blocContact {
+    width: 77%;
     font-size: 16px;
-
-    background-color: burlywood;
     display: flex;
+    margin-left: 5%;
 }
-#joinMe {
-    background-color: rgb(86, 86, 237);
-    width: 30%;
+#blocContact p{
+    margin-left: 18%;
+}
+#findMe {
+    width: 35%;
+    height: 96%;
+    text-align: left;
+    line-height: 1.4;
+    border: 5px solid lightgrey;
+    margin: 0 4% 0 2%;
+}
+#findMe :first-child{
+    font-size: 1.3em;
+}
+#findMe a{
+    color: black;
+    text-decoration: underline;
+    margin-left: 3%;
+}
+#svgTel{
+    width: 7%;
+    margin-left: 3%;
+    float: left;
+}
+#svgLocation{
+    width: 10%;
+    margin-left: 1%;
+    float: left;
+}
+#svgMail{
+    width: 12%;
+    margin-left: 2%;
+    float: left;
+}
+#links{
+    width: 55%;
+    height: 86%;
+    margin-left: 4%;
+}
+#bubble{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 7% 0% 7%;
+    border: 5px solid lightgrey;
+    border-bottom: transparent;
+    padding-top: 1%;
+}
+#bubble img{
+    width: 15%;
+    height: 50%;
+}
+#links p{
+    line-height: 1.5;
+    font-size: 1.2em;
+    text-align: left;
+    margin: 5% 0 0 5%;
 }
 #socialNetworks {
-    background-color: rgb(210, 94, 94);
-    width: 70%;
-}
-#navFooter {
-    background-color: blue;
-    /* height: 50px; */
-}
-#navFooter ul {
+    height: 30%;
     text-align: center;
+    margin: 0 7% 0 7%;
+    border: 5px solid lightgrey;
+    border-top: transparent;
 }
-#navFooter ul li {
-    display: inline;
-    /* line-height: 50px; */
-    margin-right: 20px;
-}
-#navFooter ul li a {
-    color: black;
-}
-#blocNavInfos {
-    display: flex;
-    background-color: crimson;
-    /* height: 150px; */
-    padding: 5px 0 5px 0;
+#socialNetworks img{
+    width: 12%;
+    margin: 0 5% 3% 5%;
 }
 #infosSitemap {
-    background-color: indigo;
-    /* height: 50px; */
     font-size: 16px;
-    /* line-height: 50px; */
-}
-#navInfos {
-    width: 80%;
+    line-height: 50px;
 }
 #infosSitemap p {
     text-align: center;
 }
-#up {
-    background-color: darkgreen;
-    height: 100%;
-    width: 20%;
-}
+
+
+/* ************************************MEDIAQUERIES**************************** */
+/* .sliderJs{
+    display: none;
+} */

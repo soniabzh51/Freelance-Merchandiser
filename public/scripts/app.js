@@ -40,7 +40,7 @@ const STOPPROPAGATION = function (e) {
 
 
 document.querySelectorAll('.js-modal').forEach(a => {
-    a.addEventListener('click', OPENMODAL)  
+    a.addEventListener('click', OPENMODAL)
 })
 
 window.addEventListener('keydown', function (e) {
@@ -76,11 +76,11 @@ window.addEventListener('keydown', function (e) {
 // });
 
 // ***********************MENU************************
-$(document).ready(function(){
-    $("#merch").click(function(){
+$(document).ready(function () {
+    $("#merch").click(function () {
         $(".subMenu3").toggle();
     });
-    $("#tools").click(function(){
+    $("#tools").click(function () {
         $(".subMenu4").toggle();
     });
 });
@@ -89,22 +89,22 @@ $(document).ready(function(){
 
 let slide = ["public/images/slide_1.jpg", "public/images/slide_2.jpg", "public/images/slide_3.jpg", "public/images/slide_4.png"];
 
-let i = 0; 
-setInterval(function(){
+let i = 0;
+setInterval(function () {
     document.getElementById("slide2").src = slide[i];
     i++;
     if (i == 4) i = 0;
 }, 3000);
 
-function changeSlide(sens) {     
+function changeSlide(sens) {
     i = i + sens;
-    if (i < 0)         
-    i = slide.length - 1; 
+    if (i < 0)
+        i = slide.length - 1;
 
-    if (i > slide.length - 1)        
-    i = 0; 
+    if (i > slide.length - 1)
+        i = 0;
 
-document.getElementById("slide2").src = slide[i];
+    document.getElementById("slide2").src = slide[i];
 }
 
 
@@ -130,8 +130,9 @@ document.getElementById("slide2").src = slide[i];
 
 // *************ANIMATION CONTENT2***************
 
-$(document).ready(function(){
-    $(".more").click(function(){
-      $(".ref").slideToggle("slow");
+$(document).ready(function () {
+    $(".more").click(function () {
+        $(".ref").slideToggle("slow");
     });
-  });
+});
+
