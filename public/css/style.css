@@ -9,8 +9,8 @@ body {
 }
 #page {
     max-width: 1400px;
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
 }
 a {
     text-decoration: none;
@@ -46,21 +46,21 @@ h1 {
 }
 .logo {
     width: 25%;
-    height: 70%;
+    height: 75%;
     display: flex;
     justify-content: center;
+    margin-top: 2%;
 }
 .title {
-    margin-top: 2%;
-    width: 80%;
+    padding: 2% 0 0 2%;
+    width: 75%;
     text-align: center;
     line-height: 0;
 }
 .title p {
     background-color: #063630;
     color: white;
-    width: 28%;
-    height: 20%;
+    width: inherit;
     font-family: 'Alex Brush', cursive;
     font-size: 1.9em;
     line-height: 1.6;
@@ -69,39 +69,41 @@ h1 {
 
 /**------------INTRO------------*/
 #intro{
-    margin-top: -3%;
+    margin: -3% 0 3% 0;
+    width: 100%;
 }
 svg {
-    width: 1360px;
+    width: 1136px;
     height: 24px;
 }
 path {
     stroke: #000000;
     stroke-width: 2px;
 }
-#svg2 {
+#svg1 {
     margin-bottom: 20px;
+    margin: auto;
+}
+#svg2{
+    display: none;
 }
 #strategy {
-    display: flex;
-    height: 60px;
-    width: 70%;
-    margin: auto;
-    text-align: center;
+    float: right;
+    margin: 0 14% 2% 0;
 }
 #strategy p {
     font-size: 1.3em;
     font-family: "Century Gothic", "Courier New";
-    margin: 0 auto ;
+    text-align: center;
 }
 
 /****************************MAIN**************************/
 #main {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 94%;
     height: 80%;
-    margin-bottom: 20px;
+    margin: 0 3% 3% 3%;
  }
  
 /*--------------------NAV------------------ */
@@ -227,31 +229,31 @@ path {
 #mainContent {
     width: 75%;
     height: 100%;
+    /* margin-left: 5%; */
     position: relative;
 }
 /* ---slider--- */
 #slide {
-    height: 40%;
-    width: 95%;
+    width: 98%;
     display: flex;
     background-color: #E6D9CB;
-    margin: auto;
+    margin-left: 2%;
 }
 #slider{
     display: inline-block;
     margin: auto;
-    width: 76%;
+    width: 66%;
 }
 #slide2 {
-    width: 86%;
-    height: 405px;
+    width: 100%;
+    margin: 4% 0 4% 0;
     position: static;
 }
 #preview, #next{
-    position: relative;
-    top: 150px;
+    position: absolute;
+    display: inline-block;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 2.3em;
     color: #E6D9CB;
     background-color: #000000;
     opacity: 0.5;
@@ -263,12 +265,12 @@ path {
     -o-border-radius: 10px;
 }
 #preview{
-    float: left;
-    right: 5%;
+    left: 12%;
+    margin-top: 22%;
 }
 #next{
-    float: right;
-    left: 5%;
+    right: 10%;
+    margin-top: 22%;
 }
 /* ---end slider--- */
 
@@ -278,8 +280,10 @@ path {
     color:black;
     display: flex;
     flex-direction: column;
-    margin: 30px 28px 0 28px;
-    padding: 10px 0 10px 0;
+    width: 98%;
+    margin: 2% 0 2% 2%;
+    /* padding: 10px 0 10px 0; */
+    
 }
 #coaching {
     height: 100%;
@@ -296,8 +300,7 @@ path {
     padding-left: 0;
 }
 #coaching p{
-    margin-right: 20px;
-    text-align: center;
+    text-align: left;
 }
 #cv{
     text-align: center;
@@ -308,8 +311,9 @@ path {
     background-color: #063630;
     color: white;
     text-align: justify;
-    margin: 30px 28px 0 28px;
-    padding: 10px 0 10px 0;
+    width: 98%;
+    margin-left: 2% ;
+    padding: 1% 0 2% 0;
 }
 #articles{
     display: flex;
@@ -341,7 +345,7 @@ path {
     display: none;  
 }
 #content1 h2, #content2 h2{
-    width: 45%;
+    /* width: 45%; */
     margin: auto;
     font-size: 1.2em;
     font-weight: bold;
@@ -374,7 +378,7 @@ path {
 .modal-wrapper{
     overflow: auto;
     height:100%; 
-    width: 40%; 
+    width: inherit; 
     max-width: calc(100vw - 20px);
     max-width: calc(100vh - 20px);
     background-image: url("../images/cvIsabellePhelippot.png");
@@ -387,19 +391,20 @@ path {
     text-decoration: underline;
 }
 .js-modal-close{
-    position: absolute;
-    top: 20%;
-    right: 12%;
+    position: sticky;
+    top: 17%;
+    left: 77%;
     height: 50px;
-    width: 150px;
-    border: 1px solid rgb(255, 174, 174);
+    width: 120px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     font-size: 1.3em;
-    background-color: rgb(255, 174, 174);
+    color: #ffffff;
+    background-color: #000000;
+    opacity: 0.7;
     cursor: pointer;
 }
 /* ------------End modal----------- */
@@ -410,7 +415,8 @@ path {
 /* ********************************FOOTER*************************/
 footer {
     height: 30%;
-    width: 100%;
+    width: 94%;
+    margin: auto;
 }
 #carousel{
     text-align: center;
@@ -420,8 +426,8 @@ footer {
     display: flex;
 }
 #footerImage{
-    width: 23%;
-    margin: 0;
+    width: 25%;
+    margin: auto;
 }
 #footerImage img{
     width: 100%;
@@ -437,70 +443,74 @@ footer {
     margin-left: 18%;
 }
 #findMe {
-    width: 35%;
-    height: 96%;
-    text-align: left;
-    line-height: 1.4;
+    width: 50%;
+    text-align: justify;
+    line-height: 1;
     border: 5px solid lightgrey;
-    margin: 0 4% 0 2%;
+    margin: 0 4% 0 5%;
 }
 #findMe :first-child{
     font-size: 1.3em;
+    margin: 5% 0 0 14%;
+}
+#findMe p{
+    margin-top: 9%;
+}
+#findMe :last-child{
+    font-size: 1em;
+    margin: 12% 0 0 5%;
 }
 #findMe a{
     color: black;
     text-decoration: underline;
-    margin-left: 3%;
 }
 #svgTel{
-    width: 7%;
-    margin-left: 3%;
+    width: 8%;
+    margin:  8% 0 0 3%;
     float: left;
 }
 #svgLocation{
     width: 10%;
-    margin-left: 1%;
+    margin: 5% 0 0 1%;
     float: left;
 }
 #svgMail{
-    width: 12%;
-    margin-left: 2%;
+    width: 10%;
+    margin: 5% 0 0 2%;
     float: left;
 }
 #links{
-    width: 55%;
-    height: 86%;
-    margin-left: 4%;
+    width: 50%;
+    margin: auto;
 }
 #bubble{
-    height: 80%;
     display: flex;
     justify-content: center;
-    margin: 0 7% 0% 7%;
+    margin-left: 7%;
     border: 5px solid lightgrey;
     border-bottom: transparent;
     padding-top: 1%;
 }
 #bubble img{
-    width: 15%;
-    height: 50%;
+    width: 20%;
 }
 #links p{
     line-height: 1.5;
     font-size: 1.2em;
     text-align: left;
-    margin: 5% 0 0 5%;
+    margin-left: 5%;
+   
+
 }
 #socialNetworks {
-    height: 30%;
     text-align: center;
-    margin: 0 7% 0 7%;
+    margin-left: 7%;
     border: 5px solid lightgrey;
     border-top: transparent;
 }
 #socialNetworks img{
     width: 12%;
-    margin: 0 5% 3% 5%;
+    margin: 3% 5% 3% 5%;
 }
 #infosSitemap {
     font-size: 16px;
@@ -508,10 +518,52 @@ footer {
 }
 #infosSitemap p {
     text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
 }
 
 
 /* ************************************MEDIAQUERIES**************************** */
-/* .sliderJs{
+
+@media screen and (min-width: 1170px) and (max-width: 1400px){
+    #svg2{
+        display: none;
+    }
+    #coaching div, #coaching div :first-child{
+        padding: 0 2% 0 2%;
+    }
+}
+
+@media screen and (min-width: 970px) and (max-width: 1170px){
+    svg{
+        width: 945px;
+        height: 24px;
+    }
+    #svg1{
+        display: none;
+    }
+    #svg2{
+        display: block;
+        margin-bottom: 20px;
+        margin: auto;
+    }
+    .menuTitle{
+        font-size: 1.1em;
+    }
+    .menuSubtitle {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 970px){
+    #svg1, #svg2{
+        display: none;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 768px){
+    #svg1, #svg2{
+        display: none;
+    }
+    #slider{
     display: none;
-} */
+    }
+}
