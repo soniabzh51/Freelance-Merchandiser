@@ -25,7 +25,8 @@
         <header>
             <section class="banner">
                 <div class="logo">
-                    <a href="home"><img src="public/logos/logo_IP_style.png" alt="Bienvenue chez IPstyle"></a>
+                    <a href="home" id="big"><img src="public/logos/logo_IP_style.png" alt="Bienvenue chez IPstyle" ></a>
+                    <a href="home" id="small"><img src="public/logos/logo_IP_mini.png" alt="Bienvenue chez IPstyle" ></a>
                 </div>
                 <div class="title">
                     <h1>Isabelle Phelippot</h1>
@@ -92,7 +93,7 @@
                                 <h2 class="menuTitle">MERCHANDISING</h2>
                                 <h3 class="menuSubtitle">Vitrines et magasin seront vos meilleurs atouts</h3>
                             </div>
-                            <div>
+                        </div>
                     </li>
                     <ul class="menu2">
                         <li class="subMenu3">
@@ -111,14 +112,14 @@
                         </div>
                     </li>
                     <ul class="menu2">
-                        <li class="subMenu4">
+                        <!-- <li class="subMenu4">
                             <a href="#" class="menuTitle2"></a>
-                        </li>
+                        </li> -->
                         <li class="subMenu4">
                             <a href="#" class="menuTitle2">Bookmerchandising</a>
                         </li>
                     </ul>
-                    <li>
+                    <li id="training">
                         <a href="#">
                             <div class="menuContent">
                                 <h2 class="menuTitle">FORMATION</h2>
@@ -289,9 +290,9 @@
 
         <!-- FOOTER -->
         <footer>
-            <section id="carousel">
+            <!-- <section id="carousel">
                 <p>CAROUSEL</p>
-            </section>
+            </section> -->
             <section id="footerContent">
                 <figure id="footerImage">
                     <img src="public/images/isa.jpg" alt="Photo Isabelle Phelippot">
@@ -336,6 +337,9 @@
             <section id="infosSitemap">
                 <p>@Copyright 2020 IP Style - RGPD - Mentions Légales - Sitemap</p>
             </section>
+            <div id="backOnTop"> 
+                <a href="#top"><img src="public/logos/top.png" alt="Retour haut de page" /></a> 
+            </div>
         </footer>
         <!-- End footer -->
     </div>
