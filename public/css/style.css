@@ -2,13 +2,13 @@ body,
 html {
     margin: 0;
     padding: 0;
-    height: auto;
 }
 body {
     font-size: 16px;
 }
 #page {
     max-width: 1400px;
+    min-width: 400px;
     width: 100%;
     margin: 0 auto;
 }
@@ -50,6 +50,9 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 2%;
+}
+#small{
+    display: none;
 }
 .title {
     padding: 2% 0 0 2%;
@@ -102,14 +105,12 @@ path {
     display: flex;
     justify-content: space-between;
     width: 94%;
-    height: 80%;
     margin: 0 3% 3% 3%;
  }
  
 /*--------------------NAV------------------ */
 #mainMenu {
     width: 23%;
-    height: 75%;
     font-family: "Century Gothic", "Courier New";
 }
 #mainMenu #menuMobile, #mainMenu .menuMobile{
@@ -118,14 +119,15 @@ path {
 .menu {
     padding: 0;
     margin: auto;
+    height: 80px;
 }
 .menu li {
-    height: 80px;
-    line-height: 0.8;
+    height: 100%;
+    line-height: normal;
     overflow: hidden;
     display: block;
     background-color: #B46D51;
-    margin-bottom: 25px;
+    margin-bottom: 10%;
     transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -143,28 +145,23 @@ path {
 .menu li a {
     text-align: center;
     display: block;
-    width: 100%;
     height: 100%;
     color: #063630;
     position: relative;
 }
-#menuMerch, #menuTools{
-    text-align: center;
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: #063630;
-    position: relative;
-    cursor: pointer;
+#merch .menuContent, #tools .menuContent, #training .menuContent{
+    margin-top: -3%;
 }
 .menuContent {
     width: 100%;
-    position: absolute;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
 }
 .menuTitle {
     color: #063630;
     font-size: 1.2em;
-    margin-top: 10px;
     transition: all 300ms linear;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
@@ -174,7 +171,7 @@ path {
 .menuSubtitle {
     color: white;
     font-weight: lighter;
-    margin-top: -5px;
+    margin-top: -2%;
     font-size: 1.1em;
     line-height: 1;
     transition: all 300ms linear;
@@ -190,7 +187,7 @@ path {
     color: #063630;
     font-size: 0.9em;
     font-weight: lighter;
-    margin-top: 15px;
+    margin-top: 5%;
 }
 .menu li:hover .menuSubtitle {
     color: #B46D51;
@@ -199,22 +196,26 @@ path {
 }
 .active {
     background-color: #E6D9CB;
+    padding-top: 1%;
 }
 .active .menuTitle {
     color: #063630;
+    margin-top: inherit;
 }
 .active .menuSubtitle {
     color: #B46D51;
 }
 .menu2 {
-    width: 60%;
-    margin: 0 0 7% 7%;
+    width: 70%;
+    margin: -5% 15% 0 15%;
+    padding-inline-start: 0;
+    padding-bottom: 5%;
 }
 .menu2 li {
-    height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
     display: none;
-    line-height: 2.5;
+    line-height: 1.5;
+    padding: 2%;
 }
 .menu2 li:hover {
     background-color: #E6D9CB;
@@ -228,8 +229,6 @@ path {
 /* -----------------MAIN CONTENT----------------- */
 #mainContent {
     width: 75%;
-    height: 100%;
-    /* margin-left: 5%; */
     position: relative;
 }
 /* ---slider--- */
@@ -237,7 +236,7 @@ path {
     width: 98%;
     display: flex;
     background-color: #E6D9CB;
-    margin-left: 2%;
+    margin: 0 0 5% 2%;
 }
 #slider{
     display: inline-block;
@@ -281,23 +280,23 @@ path {
     display: flex;
     flex-direction: column;
     width: 98%;
-    margin: 2% 0 2% 2%;
-    /* padding: 10px 0 10px 0; */
-    
+    margin: 2% 0 5% 2%;    
 }
 #coaching {
     height: 100%;
     display: flex;
-    padding-left: 20px;
+    background-color: #E6D9CB;
+    margin: 0 2% 0 2%;
+
 }
 #coaching div{
     width: 50%;
     border-left: 1px solid black;
-    padding-left: 20px;
+    padding: 0 2% 0 2%;
 }
-#coaching :first-child{
+ #coaching :first-child{
+    padding: 0 2% 0 2%;
     border: none;
-    padding-left: 0;
 }
 #coaching p{
     text-align: left;
@@ -345,17 +344,15 @@ path {
     display: none;  
 }
 #content1 h2, #content2 h2{
-    /* width: 45%; */
     margin: auto;
     font-size: 1.2em;
     font-weight: bold;
     font-family: "Century Gothic", "Courier New";
     text-align: center;
+    margin: 2% 0;
 }
 #content1 h2{
-    height: 40px;
     line-height: 2;
-    margin-bottom: 10px;
 }
 #cv :last-child{
     text-decoration: underline;
@@ -414,13 +411,8 @@ path {
 
 /* ********************************FOOTER*************************/
 footer {
-    height: 30%;
     width: 94%;
     margin: auto;
-}
-#carousel{
-    text-align: center;
-    font-size: 2em;
 }
 #footerContent{
     display: flex;
@@ -499,8 +491,6 @@ footer {
     font-size: 1.2em;
     text-align: left;
     margin-left: 5%;
-   
-
 }
 #socialNetworks {
     text-align: center;
@@ -521,18 +511,20 @@ footer {
     font-size: 1.2em;
     font-weight: bolder;
 }
-
+#backOnTop { 
+    position: fixed; 
+    width: 4%; 
+    bottom: 4%; 
+    left: 94%; 
+    border: 5px solid gray;
+    border-style: outset;
+  } 
+  #backOnTop img { 
+    width: 80%; 
+    margin-left: 11%;
+  }
 
 /* ************************************MEDIAQUERIES**************************** */
-
-@media screen and (min-width: 1170px) and (max-width: 1400px){
-    #svg2{
-        display: none;
-    }
-    #coaching div, #coaching div :first-child{
-        padding: 0 2% 0 2%;
-    }
-}
 
 @media screen and (min-width: 970px) and (max-width: 1170px){
     svg{
@@ -548,22 +540,416 @@ footer {
         margin: auto;
     }
     .menuTitle{
-        font-size: 1.1em;
+        font-size: 1em;
     }
     .menuSubtitle {
+        font-size: 0.9em;
+    }
+    .menu li:hover .menuTitle{
+        font-size: 0.8em;
+    }
+    .menu li:hover .menuSubtitle{
         font-size: 1em;
+    }
+    .menuTitle2{
+        font-size: 0.8em;
+    }
+    #slide{
+        margin: 0 0 7% 2%;
+    }
+    #content1{
+        margin: 2% 0 7% 2%;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 970px){
+    header{
+        width: 100%;
+        margin: auto;
+    }
+    #intro{
+        margin-top: 20px;
+    }
+    .banner{
+        width: 100%;
+        margin: auto;
+    }
+    .logo{
+        width: 40%;
+    }
+    .title{
+        padding: 0 5% 0 0;
+        line-height: 0.5;
+    }
     #svg1, #svg2{
         display: none;
     }
+    #strategy{
+        float: none;
+        margin: auto;
+    }
+    #main{
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin:  20px auto;
+    }
+    #mainMenu{
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        background-color: #e5eecc;
+        border: 2px solid #e5e6e1;
+    }
+    .menu {
+        display: none;
+    }
+    .menu li{
+        display: block;
+        width: 60%;
+        margin: 4% auto;
+        background-color: unset;
+        border-radius: unset;
+        height: unset;
+        font-size: 16px;
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+    }
+    #merch, #tools{
+        margin: 0 auto;
+    }
+    #training{
+        margin-top: 0;
+    }
+    .menu li:hover{
+        background-color: unset;
+    }
+    .menu li:last-child, .menu li:first-child{
+        line-height: 1.2;
+    }
+    .menu li:hover{
+        background-color: unset;
+    }
+    .menuTitle{
+        font-size: 16px;
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        margin: 0;
+    }
+    #merch .menuContent, #tools .menuContent, #training .menuContent{
+        margin: 0;
+        padding: 0;
+    }
+    .menu2{
+        width: 90%;
+        margin: auto;
+    }
+    .menuTitle2{
+        font-size: 14px;
+        
+    }
+    .menu li:hover .menuTitle{
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .menu2 li{
+        display: none;
+        line-height: 1;
+        padding: 0;
+    }
+    .menuSubtitle{
+        display: none;
+    }
+    #mainMenu .menuMobile{
+        display: block; 
+    }
+    #mainMenu #menuMobile:not(:checked),.menuMobile:checked{
+        position: absolute;
+        left: -9999px;
+    }
+    #mainMenu [type="checkbox"]:checked+label+ul{
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+    .menuMobile img{
+        cursor: pointer;
+        width: 20%; 
+        display: inline-flex;
+        padding: 5%;
+    }
+    .active{
+        background-color: unset;
+    }
+    .active .menuTitle{
+        color: #2af501;
+    }
+    #mainContent{
+        margin: 30px  auto;
+        width: 100%;
+    }
+    #blocContact{
+        margin-left: 3%;
+    }
+    #findMe{
+        margin: 0;
+    }
 }
 @media screen and (min-width: 400px) and (max-width: 768px){
+    .banner{
+        display: block;
+        animation: none;
+        -webkit-animation: none;
+    }
+    .logo{
+        margin: auto;
+    }
+    #big{
+        display: none;
+    }
+    #small{
+        display: block;
+    }
+    .title{
+        display: block;
+        margin: auto;
+    }
+    .title h1{
+       font-size: 2.5em;
+       line-height: 1;
+       margin: auto;
+    }
+    .title p{
+        width: 100%;
+        margin: 15px auto;
+    }
+    #strategy{
+        float: none;
+        margin: auto;
+        font-size: 0.9em;
+    }
     #svg1, #svg2{
         display: none;
+    }
+    #main{
+        display: block;
+        text-align: center;
     }
     #slider{
     display: none;
     }
+    #mainMenu{
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        background-color: #e5eecc;
+        border: 2px solid #e5e6e1;
+    }
+    .menu {
+        display: none;
+    }
+    .menu li{
+        display: block;
+        width: 60%;
+        margin: 4% auto;
+        background-color: unset;
+        border-radius: unset;
+        height: unset;
+        font-size: 16px;
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+    }
+    #merch, #tools{
+        margin: 0 auto;
+    }
+    #training{
+        margin-top: 0;
+    }
+    .menu li:hover{
+        background-color: unset;
+    }
+    .menuTitle{
+        font-size: 16px;
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        margin: 0;
+    }
+    #merch .menuContent, #tools .menuContent, #training .menuContent{
+        margin: 0;
+        padding: 0;
+    }
+    .menu2{
+        width: 90%;
+        margin: auto;
+    }
+    .menuTitle2{
+        font-size: 14px;
+        
+    }
+    .menu li:hover .menuTitle{
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .menu2 li{
+        display: none;
+        line-height: 1;
+    }
+    .menuSubtitle{
+        display: none;
+    }
+    #mainMenu .menuMobile{
+        display: block;         
+    }
+    #mainMenu #menuMobile:not(:checked),.menuMobile:checked{
+        position: absolute;
+        left: -9999px;
+    }
+    #mainMenu [type="checkbox"]:checked+label+ul{
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+    .menuMobile img{
+        cursor: pointer;
+        width: 20%; 
+        display: inline-flex;
+        padding: 5%;
+    }
+    .active{
+        background-color: unset;
+    }
+    .active .menuTitle{
+        color: #2af501;
+    }
+    #mainContent{
+        width: 100%;
+    }
+    #content1{
+       margin: 15px auto;
+       padding-top: 10px; 
+    }
+    #content1 h2{
+        font-size: 1em;
+        line-height: 1;
+        margin: 10 auto;
+    }
+    #coaching{
+        padding-left: unset;
+    }
+    #coaching div{
+        margin: 0 10px 0 10px;
+    }
+    #content2{
+        margin: auto;
+    }
+    #content2 #articles{
+        display: block;
+        width: 100%;
+    }
+    .trust{
+        margin: 10px auto;
+        width: 60%;
+        padding: 0;
+    }
+    #footerImage{
+        width: 40%;
+    }
+    #footerContent, #blocContact{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    #findMe {
+        display: block;
+        width: 65%;
+        margin:  5% auto;
+        padding: 3% 0 5% 0;
+        line-height: 1.5;
+    }
+    #findMe p{
+        width: 100%; 
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    #findMe :first-child{
+        margin: unset;
+    }
+    #findMe :last-child{
+        margin: auto;
+    }
+    #svgTel, #svgLocation, #svgMail{
+        display: none;
+    }
+    #links{
+        width: 80%;
+        margin: auto;
+    }
+    #bubble{
+        display: block;
+        width: 100%;
+        margin: auto;   
+    }
+    #bubble, #links p{
+        margin-bottom: 0;
+    }
+    #bubble img{
+        position: absolute;
+        margin: 3% 10%;
+        width: 10%;
+    }
+    #bubble p{
+        position: relative;
+        left: 28%;
+    }
+    #socialNetworks{
+        width: 100%;
+        margin: auto;
+    }
+    #socialNetworks img{
+        width: 10%;
+    }
+    #infosSitemap{
+        font-size: 0.6em;
+        width: 90%;
+    }
+    #infosSitemap p{
+        text-align: left;
+        padding-left: 3%;
+    }
+    #backOnTop { 
+        position: fixed; 
+        width: 4%; 
+        bottom: 3%; 
+        left: 78%; 
+        border: 5px solid gray;
+        border-style: outset;
+        margin-top: 30%;
+      } 
+      #backOnTop img { 
+        width: 80%; 
+        margin-left: 11%;
+      }
+    
 }
